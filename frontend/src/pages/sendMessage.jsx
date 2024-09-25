@@ -8,7 +8,7 @@ const SendMessage = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3000/api/send', {message, password}).then(res => {
+        axios.post('http://localhost:5000/api/send', {message, password}).then(res => {
             console.log(res.data.url)
             setUrl(res.data.url)
         })
